@@ -73,7 +73,7 @@ const experiences = [
 export default function Experience() {
   return (
     <section id="experience" className="section-padding">
-      <div className="flex flex-col items-center text-center mb-16">
+      <div className="flex flex-col items-center text-center mb-10 md:mb-16">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -87,7 +87,7 @@ export default function Experience() {
         </p>
       </div>
 
-      <div className="relative max-w-4xl mx-auto pl-8 border-l-2 border-white/10 space-y-12">
+      <div className="relative max-w-4xl mx-auto pl-8 border-l-2 border-white/10 space-y-10 md:space-y-12">
         {experiences.map((exp, i) => (
           <motion.div
             key={exp.period + exp.title}
@@ -100,7 +100,7 @@ export default function Experience() {
             {/* Timeline Dot */}
             <div className="absolute -left-[41px] top-0 w-5 h-5 bg-accent rounded-full border-4 border-primary shadow-[0_0_15px_rgba(16,185,129,0.5)]" />
 
-            <div className="glass p-6 md:p-8 rounded-2xl hover:border-accent/40 transition-all duration-300 group">
+            <div className="glass p-5 md:p-8 rounded-2xl hover:border-accent/40 transition-all duration-300 group">
               <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
                 <div>
                   <h3 className="text-xl font-bold text-white group-hover:text-accent transition-colors">

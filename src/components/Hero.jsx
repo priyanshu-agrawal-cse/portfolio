@@ -4,7 +4,7 @@ import avatar from '../assets/avatar.png';
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col justify-center relative overflow-hidden pt-24 pb-16">
+    <section className="min-h-[90vh] md:min-h-screen flex flex-col justify-center relative overflow-hidden pt-28 md:pt-32 pb-10 md:pb-20">
       {/* Background Orbs */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-emerald-500/10 rounded-full blur-[120px] -z-10 animate-pulse" />
       <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-blue-500/5 rounded-full blur-[150px] -z-10" />
@@ -123,7 +123,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2 }}
-          className="flex flex-col items-center gap-2 mt-16"
+          className="flex flex-col items-center gap-2 mt-8 md:mt-12"
         >
           <motion.div animate={{ y: [0, 8, 0] }} transition={{ duration: 2, repeat: Infinity }}>
             <ArrowDown className="text-emerald-400/60 w-5 h-5" />

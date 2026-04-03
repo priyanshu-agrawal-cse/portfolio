@@ -58,7 +58,7 @@ const colorMap = {
 export default function Projects() {
   return (
     <section id="projects" className="bg-secondary/20 section-padding">
-      <div className="flex flex-col items-center text-center mb-16">
+      <div className="flex flex-col items-center text-center mb-10 md:mb-16">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -72,7 +72,7 @@ export default function Projects() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
         {projects.map((project, i) => {
           const c = colorMap[project.color];
           return (
@@ -82,7 +82,7 @@ export default function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.6 }}
-              className="group glass p-8 rounded-3xl border border-white/5 hover:border-white/10 transition-all duration-300 flex flex-col relative overflow-hidden"
+              className="group glass p-6 md:p-8 rounded-3xl border border-white/5 hover:border-white/10 transition-all duration-300 flex flex-col relative overflow-hidden"
             >
               {/* Header */}
               <div className="flex items-start justify-between mb-6">

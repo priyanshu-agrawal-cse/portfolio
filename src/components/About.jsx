@@ -32,7 +32,7 @@ export default function About() {
           About Me
         </motion.p>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           {/* Left */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -78,7 +78,7 @@ export default function About() {
             </div>
 
             {/* Stats Row */}
-            <div className="grid grid-cols-4 gap-4 mt-10 pt-8 border-t border-white/5">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8 pt-6 border-t border-white/5">
               {stats.map((s) => (
                 <div key={s.label} className="text-center">
                   <p className="text-2xl font-display font-bold text-accent">{s.value}</p>
